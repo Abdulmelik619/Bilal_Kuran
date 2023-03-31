@@ -1,0 +1,110 @@
+.container,
+.container-fluid {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #container-wrapper {
+    min-width: 100vw;
+  }
+}
+.breadcrumb {
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 700;
+}
+.card .card-header .dropdown {
+  line-height: 1;
+}
+.card .card-header .dropdown .dropdown-menu {
+  line-height: 1.5;
+}
+.card .card-header[data-toggle="collapse"] {
+  text-decoration: none;
+  position: relative;
+  padding: 0.75rem 3.25rem 0.75rem 1.25rem;
+}
+.card .card-header[data-toggle="collapse"]::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 1.725rem;
+  line-height: 51px;
+  font-weight: 900;
+  content: "\f107";
+  font-family: "Font
+Awesome 5 Free";
+}
+.card .card-header[data-toggle="collapse"].collapsed {
+  border-radius: 0.35rem;
+}
+.card .card-header[data-toggle="collapse"].collapsed::after {
+  content: "\f105";
+}
+.table-flush td,
+.table-flush th {
+  border-right: 0;
+  border-left: 0;
+}
+.table-flush tbody tr:first-child td,
+.table-flush tbody tr:first-child th {
+  border-top: 0;
+}
+.table-flush tbody tr:last-child td,
+.table-flush tbody tr:last-child th {
+  border-bottom: 0;
+}
+.card .table {
+  margin-bottom: 0;
+}
+.card .table td,
+.card .table th {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.card {
+  -webkit-box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+.error-msg {
+  display: none;
+}
+#editProfile {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.editContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#deleteProfile {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.deleteContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

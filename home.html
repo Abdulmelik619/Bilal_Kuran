@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus icon"></i>
+        <div class="logo_name">Bilal Medresa</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="home.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="attendace.html">
+            <i class="bx bx-user"></i>
+            <span class="links_name">Attendance</span>
+          </a>
+          <span class="tooltip">Attendance</span>
+        </li>
+        <li>
+          <a href="Muraja.html">
+            <i class="bx bx-edit-alt"></i>
+            <span class="links_name">Muraja'a Evaluation</span>
+          </a>
+          <span class="tooltip">Muraja'a Evaluation</span>
+        </li>
+        <li>
+          <a href="Reports.html">
+            <i class="bx bxs-report"></i>
+            <span class="links_name">Reports</span>
+          </a>
+          <span class="tooltip">Reports</span>
+        </li>
+        <li>
+          <a href="createStudent.html">
+            <i class="bx bx-message-square-add"></i>
+            <span class="links_name">Add new Student</span>
+          </a>
+          <span class="tooltip">Add new Student</span>
+        </li>
+        <li>
+          <a href="createSection.html">
+            <i class="bx bxs-folder-plus"></i>
+            <span class="links_name">Create new Class</span>
+          </a>
+          <span class="tooltip">Create new Class</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <img src="icon.png" alt="profile img" />
+            <div class="name_job">
+              <div class="name">Admin</div>
+              <div class="job">Ustaz</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+
+    <section class="home-section">
+      <div id="wrapper">
+        <div id="content-wrapper" class="d-flex flex-column">
+          <div id="content">
+            <div class="container-fluid" id="container-wrapper">
+              <div
+                class="d-sm-flex align-items-center justify-content-between mb-4"
+              >
+                <h1 class="h3 mb-0 text-gray-800">Admin Dashboard</h1>
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="./">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dashboard
+                  </li>
+                </ol>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-md-6 mb-4">
+                  <div id="Students" class="card h-100 mr-4 links">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div
+                            class="text-xs font-weight-bold text-uppercase mb-1 links_text"
+                          >
+                            Students
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <i class="fas fa-users fa-2x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div id="Classes" class="card h-100 mr-4 links">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col mr-2">
+                          <div
+                            class="text-xs font-weight-bold text-uppercase mb-1 links_text"
+                          >
+                            Classes
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <i class="fas fa-chalkboard fa-2x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div id="Reports" class="card h-100 mr-4 links">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div
+                            class="text-xs font-weight-bold text-uppercase mb-1 links_text"
+                          >
+                            Reports
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <i class="fas fa-calendar fa-2x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div id="Muraja" class="card h-100 mr-4 links">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div
+                            class="text-xs font-weight-bold text-uppercase mb-1 links_text"
+                          >
+                            Muraja'a Evaluation
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <i class="fas fa-calendar-alt fa-2x"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let Students = document.getElementById("Students");
+      let Classes = document.getElementById("Classes");
+      let Reports = document.getElementById("Reports");
+      let Muraja = document.getElementById("Muraja");
+
+      Students.addEventListener("click", () => {
+        window.open("createStudent.html", "_self");
+      });
+      Classes.addEventListener("click", () => {
+        window.open("createSection.html", "_self");
+      });
+      Reports.addEventListener("click", () => {
+        window.open("Reports.html", "_self");
+      });
+      Muraja.addEventListener("click", () => {
+        window.open("Muraja.html", "_self");
+      });
+    </script>
+    <script src="js/sidebar.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
